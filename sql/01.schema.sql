@@ -1,3 +1,11 @@
+CREATE SEQUENCE public.libros_id_libro_seq
+	INCREMENT BY 1
+	MINVALUE 1
+	MAXVALUE 2147483647
+	START 100
+	CACHE 1
+	NO CYCLE;
+
 CREATE TABLE libros (
     id_libro SERIAL PRIMARY KEY,
     cd_codigo text not null,
